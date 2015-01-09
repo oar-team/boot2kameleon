@@ -9,7 +9,7 @@ boot2kameleon is a hybrid bootable ISO which starts a live Linux system based
 on Debian. Its main purpose is to run Kameleon and to install appliance on
 baremetal or virtual machine
 
-The ISO is currently about 65 MB and is based on Debian jessie.
+The ISO is currently about 35 MB and is based on Debian wheezy.
 
 This project is based on debian2docker
 
