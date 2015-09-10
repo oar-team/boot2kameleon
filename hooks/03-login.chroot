@@ -8,3 +8,5 @@ User=root
 ExecStart=
 ExecStart=-/sbin/agetty --noclear -a root %I 38400 linux
 EOF
+
+passwd -d root
