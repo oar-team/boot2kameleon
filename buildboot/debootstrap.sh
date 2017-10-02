@@ -1,6 +1,6 @@
 #debootstrap
 
-SUITE=jessie
+SUITE=stretch
 MIRROR=http://ftp.debian.org/debian
 PACKAGES="apt-utils ca-certificates isc-dhcp-client isc-dhcp-common ifupdown
           iproute2 openssh-server xz-utils systemd systemd-sysv acpid

@@ -21,4 +21,4 @@ sudo bash $CURRENT_DIR/debootstrap.sh $DEBOOTSTRAP_DIR
 
 ## Generate iso
 rsync -aAX --exclude '/.kameleon_timestamp' $DEBOOTSTRAP_DIR/* $ROOTFS_DIR
-bash $CURRENT_DIR/build_iso.sh $EXPORT_DIR/debian-jessie-$(uname -m)-live.iso
+bash $CURRENT_DIR/build_iso.sh $EXPORT_DIR/debian-stretch-$(uname -m)-live.iso

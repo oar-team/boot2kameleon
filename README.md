@@ -1,20 +1,16 @@
-=============
-boot2kameleon
-=============
+# boot2kameleon
 
-What is boot2kameleon
-=====================
+## What is boot2kameleon
 
 boot2kameleon is a hybrid bootable ISO which starts a live Linux system based
 on Debian. Its main purpose is to run Kameleon and to install appliance on
 baremetal or virtual machine
 
-The ISO is currently about 65 MB and is based on Debian jessie.
+The ISO is currently about 65 MB and is based on Debian stretch.
 
 This project is based on debian2docker
 
-How to build
-============
+## How to build
 
 Building boot2kameleon is quite simple with vagrant:
 
@@ -25,8 +21,7 @@ vagrant up $TARGET_VM
 vagrant destroy -f $TARGET_VM
 ```
 
-How to run
-==========
+## How to run
 
 1. Create a VM.
 2. Add the ISO you've built as a virtual CD/DVD image.
@@ -34,8 +29,7 @@ How to run
 4. Wait for the system to boot and start using debian2docker.
 
 
-Linux & qemu/kvm example:
--------------------------
+## Linux & qemu/kvm example:
 
 ```
 $ qemu-system-x86_64 -enable-kvm -cdrom boot2kameleon-VERSION-x86_64.iso -m 768
