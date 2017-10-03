@@ -7,7 +7,7 @@ PACKAGES="apt-utils ca-certificates isc-dhcp-client isc-dhcp-common ifupdown
           acpi-support-base parted e2fsprogs debootstrap extlinux vim nano"
 
 if [ "$(uname -m)" == "i686" ] ; then
-    PACKAGES="linux-image-486 $PACKAGES"
+    PACKAGES="linux-image-686 $PACKAGES"
     ARCH="i386"
 else
     PACKAGES="linux-image-amd64 $PACKAGES"
