@@ -1,7 +1,3 @@
-=============
-boot2kameleon
-=============
-
 What is boot2kameleon
 =====================
 
