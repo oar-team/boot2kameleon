@@ -1,18 +1,13 @@
 #debootstrap
 
-SUITE=jessie
+SUITE=bullseye
 MIRROR=http://ftp.debian.org/debian
 PACKAGES="apt-utils ca-certificates isc-dhcp-client isc-dhcp-common ifupdown
           iproute2 openssh-server xz-utils systemd systemd-sysv acpid
           acpi-support-base parted e2fsprogs debootstrap extlinux vim nano"
 
-if [ "$(uname -m)" == "i686" ] ; then
-    PACKAGES="linux-image-486 $PACKAGES"
-    ARCH="i386"
-else
-    PACKAGES="linux-image-amd64 $PACKAGES"
-    ARCH="amd64"
-fi
+PACKAGES="linux-image-amd64 $PACKAGES"
+ARCH="amd64"
 
 echo "---> debootstrapping"
 

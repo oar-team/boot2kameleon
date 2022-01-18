@@ -8,10 +8,6 @@ Vagrant.configure("2") do |config|
     c.vm.box = "ubuntu/trusty64"
   end
 
-  config.vm.define "vm32" do |c|
-    c.vm.box = "ubuntu/trusty32"
-  end
-
   # share src folder with all nodes
   config.vm.synced_folder ".", "/vagrant"
 
