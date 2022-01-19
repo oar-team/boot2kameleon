@@ -20,9 +20,9 @@ set -e
 # be prepared to find and fix it for your own images.
 
 # Removing unused packages
-for PACKAGE in apt-utils aptitude man-db manpages info dselect
+for PACKAGE in apt-utils aptitude manpages
 do
-	if ! apt-get remove --purge --yes --force-yes "${PACKAGE}"
+	if ! apt-get remove --purge --yes --allow-remove-essential "${PACKAGE}"
 	then
 		echo "WARNING: ${PACKAGE} isn't installed"
 	fi
